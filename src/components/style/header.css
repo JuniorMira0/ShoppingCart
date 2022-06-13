@@ -1,0 +1,25 @@
+.header {
+  align-items: center;
+  background-color: #FFF059;
+  border-bottom: 1px  #666;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  height: 80px;
+  padding: 0 25px;
+}
+
+.header input {
+  align-items: center;
+  background-color: #FFFFFF;
+  justify-content: center;
+  border-style: none;
+  padding: 10px;
+  width: 500px;
+  height: 30px;
+}
+
+.header ol li {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
