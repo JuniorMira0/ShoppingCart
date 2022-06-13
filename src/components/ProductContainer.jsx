@@ -1,4 +1,5 @@
 import React from 'react';
+import './style/productContainer.css';
 
 function ProductContainer() {
   return (
