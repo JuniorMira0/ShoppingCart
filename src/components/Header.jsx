@@ -13,7 +13,6 @@ function Header() {
   return (
     <header>
       <div className="header">
-        <a className="logo" href="" />
         <div>
           <label htmlFor="search-input">
             <input
