@@ -1,9 +1,11 @@
 import React from 'react';
+import ProductContainer from '../components/ProductContainer';
 
 function Home() {
   return (
-    <div className="Home">
+    <div className="home">
       <p>Home Page</p>
+      <ProductContainer />
     </div>
   );
 }
