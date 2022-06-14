@@ -1,10 +1,11 @@
 import React from 'react';
+import Header from '../components/NavBar/Header';
 import ProductContainer from '../components/ProductContainer';
 
 function Home() {
   return (
     <div className="home">
-      <p>Home Page</p>
+      <Header />
       <ProductContainer />
     </div>
   );

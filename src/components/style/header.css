@@ -5,21 +5,61 @@
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
   display: flex;
   height: 80px;
-  padding: 0 25px;
+  padding: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
 }
 
 .header input {
-  align-items: center;
-  background-color: #FFFFFF;
-  justify-content: center;
-  border-style: none;
-  padding: 10px;
-  width: 500px;
+  border: none;
+  width: 100%;
   height: 30px;
+  padding: 10px;
+}
+.search-input {
+  background-color: #FFFFFF;
+  border-style: none;
+  width: 50%;
+  margin: 20px 0 10px;
 }
 
-.header ol li {
-  display: flex;
-  flex-direction: row;
-  list-style: none;
+.navBar nav ul li {
+  display: inline-block;
+  margin: 0px 10px 0;
 }
+
+.navBar nav ul li a {
+  text-decoration: none;
+  color: rgb(105, 101, 101);
+}
+
+.navBar .mobileNavigation {
+  display: none;
+}
+
+@media (max-width: 740px) {
+  .navBar .navigation {
+    display: none;
+  }
+  .navBar .mobileNavigation {
+    display: flex;
+    align-items: center;
+  }
+  .navBar .mobileNavigation .hamburger {
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+  }
+  .navBar nav ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 100%;
+    background-color: #FFFFFF;
+    border-top: 2px solid black;
+  }
+}
+
