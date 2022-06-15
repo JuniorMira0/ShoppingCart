@@ -24,6 +24,10 @@
   margin: 20px 0 10px;
 }
 
+.header .cartNav {
+  flex-direction: column;
+}
+
 .navBar nav ul li {
   display: inline-block;
   margin: 0px 10px 0;
@@ -47,8 +51,7 @@
     align-items: center;
   }
   .navBar .mobileNavigation .hamburger {
-    position: absolute;
-    right: 0;
+    position: relative;
     cursor: pointer;
   }
   .navBar nav ul {

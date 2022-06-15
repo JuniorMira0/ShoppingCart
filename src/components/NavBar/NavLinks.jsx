@@ -1,24 +1,24 @@
 import React from 'react';
 
-function NavLinks() {
+function NavLinks(props) {
   return (
     <ul>
-      <li>
+      <li onClick={() => props.isMobile && props.closeMobileMenu()}>
         <a href="#">categorias</a>
       </li>
-      <li>
+      <li onClick={() => props.isMobile && props.closeMobileMenu()}>
         <a href="#">ofertas</a>
       </li>
-      <li>
+      <li onClick={() => props.isMobile && props.closeMobileMenu()}>
         <a href="#">smartphone</a>
       </li>
-      <li>
+      <li onClick={() => props.isMobile && props.closeMobileMenu()}>
         <a href="#">tablets</a>
       </li>
-      <li>
+      <li onClick={() => props.isMobile && props.closeMobileMenu()}>
         <a href="#">moda</a>
       </li>
-      <li>
+      <li onClick={() => props.isMobile && props.closeMobileMenu()}>
         <a href="#">casa</a>
       </li>
     </ul>

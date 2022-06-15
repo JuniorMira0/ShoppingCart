@@ -1,9 +1,5 @@
 import React, { useState } from 'react';
-import {
-  AiOutlineMenu,
-  AiOutlineClose,
-  AiOutlineShoppingCart,
-} from 'react-icons/ai';
+import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import NavLinks from './NavLinks';
 import '../style/header.css';
 
@@ -24,11 +20,12 @@ function MobileNavLinks() {
       onClick={() => setOpen(!open)}
     />
   );
+  const closeMobileMenu = () => setOpen(false);
+
   return (
     <nav className="mobileNavigation">
       {open ? closeItem : openItem}
-      {open && <NavLinks />}
-      <AiOutlineShoppingCart className="cartNav" size="25px" />
+      {open && <NavLinks isMobile closeMobileMenu={closeMobileMenu} />}
     </nav>
   );
 }

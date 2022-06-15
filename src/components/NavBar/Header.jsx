@@ -1,4 +1,5 @@
 import React from 'react';
+import { AiOutlineShoppingCart } from 'react-icons/ai';
 import '../style/header.css';
 import NavBar from './NavBar';
 
@@ -16,6 +17,7 @@ function Header() {
             />
           </label>
         </div>
+        <AiOutlineShoppingCart className="cartNav" size="25px" />
         <NavBar />
       </div>
     </header>
