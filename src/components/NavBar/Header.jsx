@@ -17,8 +17,10 @@ function Header() {
             />
           </label>
         </div>
-        <AiOutlineShoppingCart className="cartNav" size="25px" />
-        <NavBar />
+        <div className="menu-icons">
+          <AiOutlineShoppingCart className="cartNav" size="25px" />
+          <NavBar />
+        </div>
       </div>
     </header>
   );

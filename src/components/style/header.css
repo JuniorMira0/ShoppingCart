@@ -4,7 +4,7 @@
   border-bottom: 1px  #666;
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
   display: flex;
-  height: 80px;
+  height: 100px;
   padding: 0;
   flex-direction: column;
   justify-content: center;
@@ -20,12 +20,19 @@
 .search-input {
   background-color: #FFFFFF;
   border-style: none;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
   width: 50%;
   margin: 20px 0 10px;
 }
 
-.header .cartNav {
-  flex-direction: column;
+.header .menu-icons {
+  display: flex;
+  flex-direction: row;
+}
+.cartNav {
+  display: flex;
+  align-items: center;
+  background-color: red;
 }
 
 .navBar nav ul li {
